@@ -1,0 +1,5 @@
+[build]
+builder = "railway:python"
+
+[deploy]
+startCommand = "gunicorn config.wsgi"
