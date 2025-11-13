@@ -24,8 +24,12 @@ SECRET_KEY = 'django-insecure-90etgm#qlk)#5if*tbz23g(djsi21vi5azz6b9n@1-1h-93o00
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "3dbackend-production.up.railway.app",  # Add this
+    "3dvision.vercel.app",                  # Your frontend URL
+    "localhost",                            # For local testing
+    "127.0.0.1",                           # For local testing
+]
 CORS_ALLOW_ALL_ORIGINS = True   # TEMPORARY for development
 
 CORS_ALLOW_HEADERS = [
